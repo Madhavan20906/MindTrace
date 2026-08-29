@@ -14,23 +14,19 @@
 ### Tagline
 > **"Understand the learner's mental model. Not just their score."**
 
----
+## 🚀 Diagnostic Workflow
 
-## ⏱️ Quick Interactive Demo Guide (Step-by-Step Script)
-
-Follow this exact 3-step path to experience the core "aha!" transfer moment in 120 seconds:
+Experience the core diagnostic process in 3 steps:
 
 ```
-Step 1: Select 1-Click Domain Preset (e.g. Computer Science - Recursion Stack vs Heap)
+Step 1: Select a Domain Preset or Input Problem
         → Observe Phase: AI reconstructs implicit mental model & identifies competing hypotheses.
 
-Step 2: Experience Adaptive Socratic Investigation
-        → Investigate Phase: Answer the diagnostic probe. 
-        → AI Skeptic & Bayesian Engine recalculates P(Hi|E) in real-time.
+Step 2: Answer Socratic Probes
+        → Investigate Phase: Answer diagnostic probes as the Bayesian Engine recalculates belief probabilities.
 
-Step 3: Transfer Evaluation & Cross-Domain Pattern Discovery
-        → Verify Phase: Complete the transfer scenario.
-        → View Transfer Evaluation Score & longitudinal cross-domain pattern matching.
+Step 3: Transfer Evaluation & Insights
+        → Verify Phase: Complete the transfer scenario to evaluate conceptual mastery and view longitudinal reasoning patterns.
 ```
 
 ---
