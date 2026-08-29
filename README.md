@@ -1,7 +1,5 @@
 # MINDTRACE — Universal AI Cognitive Diagnostic System
-> **Submission for the Prometheus AI Challenge 2026**
 
-![Prometheus AI Challenge](https://img.shields.io/badge/Prometheus%20AI%20Challenge-2026%20Submission-8b5cf6?style=for-the-badge)
 ![Engine](https://img.shields.io/badge/Engine-Domain--Agnostic%20Bayesian%20v5-06b6d4?style=for-the-badge)
 ![Automated Tests](https://img.shields.io/badge/Tests-13%2F13%20Vitest%20Passed-10b981?style=for-the-badge)
 ![Security](https://img.shields.io/badge/Security-Edge%20Proxy%20%26%20Rate%20Limited-f59e0b?style=for-the-badge)
@@ -18,7 +16,7 @@
 
 ---
 
-## ⏱️ 2-Minute Judge Demo Guide (Step-by-Step Script)
+## ⏱️ Quick Interactive Demo Guide (Step-by-Step Script)
 
 Follow this exact 3-step path to experience the core "aha!" transfer moment in 120 seconds:
 
