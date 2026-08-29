@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #0b0f17;
+    --card-bg: #111827;
+    --card-border: #1f2937;
+    --card-hover: #1e293b;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+  }
+
+  html, body, #root {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #090d16;
+    color: #f8fafc;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Subtle Matte Background Grid (No Neon Meshes) */
+.vibrant-mesh-bg {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Professional Domain Badges */
+.domain-badge-physics,
+.domain-badge-cs,
+.domain-badge-math,
+.domain-badge-bio,
+.domain-badge-econ {
+  background-color: #1e293b;
+  color: #cbd5e1;
+  border: 1px solid #334155;
+}
+
+/* Clean Profile Cards */
+.profile-conceptual,
+.profile-procedural,
+.profile-surface {
+  background-color: #111827;
+  border-color: #1f2937;
+}
+
+.profile-conceptual.selected,
+.profile-procedural.selected,
+.profile-surface.selected {
+  border-color: #3b82f6;
+  background-color: #1e293b;
+}
+
+/* Crisp Studio Cards */
+.studio-card, .formal-card, .glass-panel {
+  background-color: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.studio-card:hover, .formal-card:hover, .glass-panel:hover {
+  border-color: #334155;
+}
+
+/* Clean Solid Buttons (No Neon Glows) */
+.btn-cyber-primary, .btn-quantum-primary, .btn-formal-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  border: 1px solid #3b82f6;
+  transition: background-color 0.15s ease;
+}
+
+.btn-cyber-primary:hover, .btn-quantum-primary:hover, .btn-formal-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-cyber-secondary, .btn-quantum-secondary, .btn-formal-secondary {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+  font-weight: 600;
+  transition: background-color 0.15s ease;
+}
+
+.btn-cyber-secondary:hover, .btn-quantum-secondary:hover, .btn-formal-secondary:hover {
+  background-color: #334155;
+  color: #ffffff;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Accessibility Focus States */
+:focus-visible {
+  outline: 2px solid #6366f1 !important;
+  outline-offset: 2px !important;
+}
+
+/* Vestibular Accessibility & Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
