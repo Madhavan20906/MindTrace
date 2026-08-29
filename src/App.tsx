@@ -498,7 +498,7 @@ export function App() {
           THE REASONING ENGINE REMAINS.
         </p>
         <p className="text-slate-500 text-[10px]">
-          MindTrace Universal Bayesian Reasoning Engine • August 2026 AI Challenge Build
+          MindTrace Universal Bayesian Reasoning Engine
         </p>
       </footer>
     </div>
