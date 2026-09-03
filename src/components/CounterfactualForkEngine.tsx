@@ -56,7 +56,7 @@ Output strictly in readable markdown with clear section headings.`;
 
         <div className="relative z-10 space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-bold bg-pink-500/15 text-pink-300 border border-pink-500/30">
-            <Sparkles className="w-3.5 h-3.5 text-pink-400" /> HACKATHON NOVELTY FEATURE #2
+            <Sparkles className="w-3.5 h-3.5 text-pink-400" /> COUNTERFACTUAL REALITY ENGINE
           </div>
           <h1 className="text-3xl font-extrabold text-white font-sans tracking-tight">
             Live Counterfactual "What-If" Reality Forking Engine

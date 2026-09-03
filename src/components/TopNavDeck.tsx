@@ -83,7 +83,7 @@ export const TopNavDeck: React.FC<TopNavDeckProps> = ({
                 Mind<span className="text-amber-400">Trace</span>
               </span>
               <span className="text-[10px] font-mono font-bold bg-violet-500/20 text-violet-300 border border-violet-500/30 px-2 py-0.5 rounded-full">
-                v3.0 Hackathon Edition
+                v3.0 Production
               </span>
             </div>
             <p className="text-[10px] text-slate-400 font-mono flex items-center gap-1.5">
