@@ -21,7 +21,7 @@ export interface AIProvider {
 
 // 1. Live Gemini AI Provider (Google GenAI Direct Client)
 export class GeminiLiveProvider implements AIProvider {
-  public name = 'Google Gemini 2.5 Engine';
+  public name = 'Google Gemini 3.6 Engine';
   private config: AIProviderConfig;
 
   constructor(config: AIProviderConfig) {
@@ -39,7 +39,7 @@ export class GeminiLiveProvider implements AIProvider {
 
     const ai = new GoogleGenAI({ apiKey: this.config.apiKey! });
     const response = await ai.models.generateContent({
-      model: this.config.modelName || 'gemini-2.5-flash',
+      model: this.config.modelName || 'gemini-3.6-flash',
       contents: prompt,
       config: {
         systemInstruction,
@@ -77,7 +77,7 @@ export class ServerProxyProvider implements AIProvider {
       body: JSON.stringify({
         prompt,
         systemInstruction,
-        model: 'gemini-2.5-flash',
+        model: 'gemini-3.6-flash',
         temperature: 0.2,
       }),
     });
@@ -119,12 +119,15 @@ export class GenericFallbackProvider implements AIProvider {
 
 // Unified Factory & Execution Pipeline
 export function getActiveAIProvider(customApiKey?: string): AIProvider {
-  // If client key is explicitly passed or configured in localStorage/env, use direct GeminiLiveProvider
-  if (customApiKey && customApiKey.trim().length > 5 && customApiKey !== 'your_gemini_api_key_here') {
-    return new GeminiLiveProvider({ apiKey: customApiKey });
+  const envKey = import.meta.env.VITE_GEMINI_API_KEY;
+  const keyToUse = customApiKey || envKey;
+
+  // If key is configured in env or explicitly passed, use direct GeminiLiveProvider
+  if (keyToUse && keyToUse.trim().length > 5 && keyToUse !== 'your_gemini_api_key_here') {
+    return new GeminiLiveProvider({ apiKey: keyToUse });
   }
 
-  // Default runtime preference: Server Edge Proxy to prevent client API key exposure
+  // Fallback to Server Edge Proxy
   if (typeof window !== 'undefined') {
     return new ServerProxyProvider();
   }
@@ -147,7 +150,7 @@ export async function executeAIProviderQuery(
     console.warn(`[AI Provider] ${primaryProvider.name} failed:`, primaryErr);
     
     // If proxy failed but client has API key, attempt direct fallback
-    if (customApiKey && primaryProvider.name !== 'Google Gemini 2.5 Engine') {
+    if (customApiKey && primaryProvider.name !== 'Google Gemini 3.6 Engine') {
       try {
         const directProvider = new GeminiLiveProvider({ apiKey: customApiKey });
         if (directProvider.isAvailable()) {

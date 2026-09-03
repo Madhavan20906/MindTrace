@@ -99,7 +99,7 @@ The repository includes `.github/workflows/ci.yml` which automatically executes 
 
 MindTrace uses a modular provider interface (`AIProvider`) decoupling prompt logic from LLM implementations:
 - **`ServerProxyProvider`**: Routes requests through secure serverless edge endpoints (default).
-- **`GeminiLiveProvider`**: Connects directly to Google Gemini 2.5 Engine via `@google/genai` when an explicit client key is provided.
+- **`GeminiLiveProvider`**: Connects directly to Google Gemini 3.6 Engine via `@google/genai` when an explicit client key is provided.
 - **`GenericFallbackProvider`**: Zero-dependency structural engine for offline operation.
 
 ---

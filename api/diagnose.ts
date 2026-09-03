@@ -73,7 +73,7 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
   }
 
   try {
-    const { prompt, model = 'gemini-2.5-flash', systemInstruction, temperature = 0.2 } = req.body || {};
+    const { prompt, model = 'gemini-3.6-flash', systemInstruction, temperature = 0.2 } = req.body || {};
 
     if (!prompt) {
       return res.status(400).json({ error: 'Missing prompt parameter' });
