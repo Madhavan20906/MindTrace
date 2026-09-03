@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HelpCircle, ArrowRight, RefreshCw, Zap, CheckCircle2 } from 'lucide-react';
+import { HelpCircle, ArrowRight, RefreshCw, Sparkles, CheckCircle2 } from 'lucide-react';
 
 interface DiagnosticQuestionCardProps {
   questionText: string;
@@ -36,7 +36,7 @@ export const DiagnosticQuestionCard: React.FC<DiagnosticQuestionCardProps> = ({
       <div className="bg-[#141622] p-5 rounded-xl border border-[#232636] flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-3">
           <div className="p-2.5 rounded-lg bg-amber-950/30 border border-amber-800/40 text-amber-500">
-            <Zap className="w-5 h-5" />
+            <Sparkles className="w-5 h-5" />
           </div>
           <div>
             <div className="flex items-center gap-2">

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HelpCircle, ArrowRight, RefreshCw, Zap, CheckCircle2, Award } from 'lucide-react';
+import { HelpCircle, ArrowRight, RefreshCw, CheckCircle2, Award } from 'lucide-react';
 
 interface TransferCardProps {
   transferProblemText: string;
@@ -27,7 +27,7 @@ export const TransferCard: React.FC<TransferCardProps> = ({
       <div className="studio-card p-6 rounded-2xl bg-[#111625] border border-indigo-500/30 flex flex-wrap items-center justify-between gap-4 shadow-xl" aria-live="polite" aria-atomic="true">
         <div className="flex items-center gap-3">
           <div className="p-3 rounded-xl bg-indigo-500/15 border border-indigo-500/30 text-indigo-400">
-            <Zap className="w-6 h-6 animate-pulse text-indigo-400" />
+            <Award className="w-6 h-6 animate-pulse text-indigo-400" />
           </div>
           <div>
             <div className="flex items-center gap-2">

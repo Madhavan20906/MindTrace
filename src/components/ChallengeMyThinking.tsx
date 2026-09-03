@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShieldAlert, ArrowRight, RefreshCw, Zap } from 'lucide-react';
+import { ShieldAlert, ArrowRight, RefreshCw } from 'lucide-react';
 import { challengeMyThinking, type ChallengeReport } from '../services/aiEngine';
 
 interface ChallengeMyThinkingProps {
@@ -96,7 +96,7 @@ export const ChallengeMyThinking: React.FC<ChallengeMyThinkingProps> = ({
               </>
             ) : (
               <>
-                <Zap className="w-4 h-4 text-rose-400" /> Challenge My Thinking
+                <ShieldAlert className="w-4 h-4 text-rose-400" /> Challenge My Thinking
               </>
             )}
           </button>

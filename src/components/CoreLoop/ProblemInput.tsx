@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HelpCircle, ArrowRight, Brain, RefreshCw, Sparkles, Zap, UserCheck, ShieldAlert, CheckCircle2 } from 'lucide-react';
+import { HelpCircle, ArrowRight, Brain, RefreshCw, Sparkles, UserCheck, ShieldAlert, CheckCircle2 } from 'lucide-react';
 import { DomainPresets } from '../DomainPresets';
 import { type MultiDomainPreset } from '../../services/aiEngine';
 
@@ -101,7 +101,7 @@ export const ProblemInput: React.FC<ProblemInputProps> = ({ onSubmit, onSelectPe
         <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#222b42] pb-4">
           <div className="flex items-center gap-3">
             <div className="p-3 rounded-xl bg-indigo-500/15 border border-indigo-500/30 text-indigo-400">
-              <Zap className="w-6 h-6 text-indigo-400" />
+              <Brain className="w-6 h-6 text-indigo-400" />
             </div>
             <div>
               <span className="text-xs font-mono uppercase tracking-wider text-indigo-400 font-bold">

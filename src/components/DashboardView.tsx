@@ -212,7 +212,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
       <div className="bg-[#161824]/90 backdrop-blur-xl p-7 rounded-3xl border border-white/10 space-y-6 shadow-xl">
         <div className="flex items-center gap-3 border-b border-white/5 pb-4">
           <div className="w-10 h-10 rounded-xl bg-amber-500/15 border border-amber-500/30 text-amber-400 flex items-center justify-center font-bold">
-            <Zap className="w-5 h-5" />
+            <Sparkles className="w-5 h-5" />
           </div>
           <div>
             <h2 className="text-xl font-bold text-white font-sans">

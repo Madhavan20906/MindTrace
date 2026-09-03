@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Brain, Sparkles, ArrowRight, Zap, RefreshCcw, CheckCircle2, ShieldAlert } from 'lucide-react';
+import { Brain, Sparkles, ArrowRight, RefreshCcw, CheckCircle2, ShieldAlert } from 'lucide-react';
 
 interface PrerequisiteNode {
   id: string;
@@ -89,7 +89,7 @@ export const CausalMindMapStudio: React.FC = () => {
               onClick={triggerRepairBeam}
               className="px-3.5 py-1.5 rounded-xl bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 text-xs font-bold hover:bg-cyan-500/30 transition cursor-pointer flex items-center gap-1.5"
             >
-              <Zap className="w-3.5 h-3.5 text-cyan-400 fill-current" /> Fire Socratic Repair Beam
+              <Sparkles className="w-3.5 h-3.5 text-cyan-400" /> Fire Socratic Repair Beam
             </button>
           </div>
 

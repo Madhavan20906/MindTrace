@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GitFork, Sparkles, ArrowRight, CheckCircle2, Zap } from 'lucide-react';
+import { GitFork, Sparkles, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { executeAIProviderQuery } from '../services/aiProvider';
 import { getApiKey } from '../services/aiEngine';
 
@@ -142,7 +142,7 @@ Output strictly in readable markdown with clear section headings.`;
       {/* DIVERGENCE INSIGHT STRIP */}
       <div className="bg-[#18121c]/90 p-6 rounded-3xl border border-pink-500/30 space-y-2 shadow-xl">
         <div className="flex items-center gap-2 text-xs font-mono text-pink-400 font-bold">
-          <Zap className="w-4 h-4 text-pink-400" /> SYSTEM DIVERGENCE INSIGHT
+          <Sparkles className="w-4 h-4 text-pink-400" /> SYSTEM DIVERGENCE INSIGHT
         </div>
         <p className="text-sm font-bold text-white font-sans">{forkOutput.divergenceInsight}</p>
       </div>
